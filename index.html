@@ -6,67 +6,7 @@
 <title>Logilm(ロジルム)— 観た作品を記録する、自分だけのアーカイブ</title>
 <meta name="description" content="Logilmは、観た映画・シリーズ・アニメを記録して評価する、個人向けの視聴記録アプリです。iOS・Android・Webに対応予定。現在開発中です。">
 <meta name="color-scheme" content="light dark">
-<style>
-  :root {
-    --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #5f6368;
-    --line: #e3e3e3;
-    --card: #fafafa;
-    --accent: #2f4858;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #121316;
-      --fg: #ececec;
-      --muted: #9aa0a6;
-      --line: #2a2c31;
-      --card: #1a1c20;
-      --accent: #cfd8dc;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP",
-      "Yu Gothic", Meiryo, sans-serif;
-    line-height: 1.8;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-  header { padding: 88px 0 56px; border-bottom: 1px solid var(--line); }
-  .brand { font-size: 34px; font-weight: 600; letter-spacing: 0.04em; margin: 0; }
-  .brand span { font-size: 15px; font-weight: 400; color: var(--muted); margin-left: 12px; letter-spacing: 0.08em; }
-  .lead { font-size: 19px; margin: 20px 0 0; color: var(--fg); }
-  .sub { color: var(--muted); margin: 12px 0 0; font-size: 15px; }
-  section { padding: 48px 0; border-bottom: 1px solid var(--line); }
-  h2 { font-size: 15px; font-weight: 600; letter-spacing: 0.1em; color: var(--muted); margin: 0 0 24px; }
-  .feature { margin: 0 0 28px; }
-  .feature:last-child { margin-bottom: 0; }
-  .feature h3 { font-size: 17px; font-weight: 600; margin: 0 0 6px; }
-  .feature p { margin: 0; color: var(--muted); font-size: 15px; }
-  .status { background: var(--card); border: 1px solid var(--line); padding: 24px; }
-  .status p { margin: 0 0 12px; font-size: 15px; }
-  .status p:last-child { margin-bottom: 0; }
-  dl { display: grid; grid-template-columns: 8em 1fr; gap: 10px 20px; margin: 0; font-size: 15px; }
-  dt { color: var(--muted); }
-  dd { margin: 0; }
-  a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
-  a:hover { color: var(--muted); }
-  footer { padding: 40px 0 72px; color: var(--muted); font-size: 13px; }
-  footer p { margin: 0 0 10px; }
-  @media (max-width: 520px) {
-    header { padding: 56px 0 40px; }
-    .brand { font-size: 28px; }
-    .brand span { display: block; margin: 8px 0 0; }
-    .lead { font-size: 17px; }
-    dl { grid-template-columns: 1fr; gap: 2px 0; }
-    dd { margin-bottom: 12px; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
@@ -109,7 +49,7 @@
       <dt>言語・地域</dt>
       <dd>日本語・日本国内</dd>
       <dt>表示</dt>
-      <dd>ライトモード・ダークモードの両方</dd>
+      <dd>ダークモード</dd>
     </dl>
   </section>
 
@@ -126,6 +66,12 @@
     <p>ご連絡は <a href="mailto:yuta2da+logilm-support@gmail.com">yuta2da+logilm-support@gmail.com</a> までお願いします。</p>
     <p class="sub">アカウントに関する通知(パスワードの変更、ログイン方法の追加・解除、アカウントの復旧・削除など)は、
     ご登録のメールアドレス宛に <code>noreply@logilm.com</code> からお送りします。宣伝や広告のメールはお送りしません。</p>
+  </section>
+
+  <section>
+    <h2>規約とプライバシー</h2>
+    <p><a href="terms.html">利用規約</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+    <p class="sub">取得する情報、その使い道、保存する期間、利用者ができることをまとめています。</p>
   </section>
 
   <footer>

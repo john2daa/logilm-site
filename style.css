@@ -1,0 +1,70 @@
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5f6368;
+    --line: #e3e3e3;
+    --card: #fafafa;
+    --accent: #2f4858;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121316;
+      --fg: #ececec;
+      --muted: #9aa0a6;
+      --line: #2a2c31;
+      --card: #1a1c20;
+      --accent: #cfd8dc;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP",
+      "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 88px 0 56px; border-bottom: 1px solid var(--line); }
+  .brand { font-size: 34px; font-weight: 600; letter-spacing: 0.04em; margin: 0; }
+  .brand span { font-size: 15px; font-weight: 400; color: var(--muted); margin-left: 12px; letter-spacing: 0.08em; }
+  .lead { font-size: 19px; margin: 20px 0 0; color: var(--fg); }
+  .sub { color: var(--muted); margin: 12px 0 0; font-size: 15px; }
+  section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; font-weight: 600; letter-spacing: 0.1em; color: var(--muted); margin: 0 0 24px; }
+  .feature { margin: 0 0 28px; }
+  .feature:last-child { margin-bottom: 0; }
+  .feature h3 { font-size: 17px; font-weight: 600; margin: 0 0 6px; }
+  .feature p { margin: 0; color: var(--muted); font-size: 15px; }
+  .status { background: var(--card); border: 1px solid var(--line); padding: 24px; }
+  .status p { margin: 0 0 12px; font-size: 15px; }
+  .status p:last-child { margin-bottom: 0; }
+  dl { display: grid; grid-template-columns: 8em 1fr; gap: 10px 20px; margin: 0; font-size: 15px; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--muted); }
+  footer { padding: 40px 0 72px; color: var(--muted); font-size: 13px; }
+  footer p { margin: 0 0 10px; }
+  @media (max-width: 520px) {
+    header { padding: 56px 0 40px; }
+    .brand { font-size: 28px; }
+    .brand span { display: block; margin: 8px 0 0; }
+    .lead { font-size: 17px; }
+    dl { grid-template-columns: 1fr; gap: 2px 0; }
+    dd { margin-bottom: 12px; }
+  }
+  /* 規約・ポリシーの本文 */
+  .doc h2 { font-size: 17px; font-weight: 600; color: var(--fg); letter-spacing: 0; margin: 40px 0 12px; }
+  .doc h2:first-of-type { margin-top: 0; }
+  .doc p { margin: 0 0 14px; font-size: 15px; }
+  .doc ul { margin: 0 0 14px; padding-left: 1.3em; font-size: 15px; }
+  .doc li { margin: 0 0 6px; }
+  .doc .note { color: var(--muted); }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 40px; }
+  .back { display: inline-block; margin: 0 0 32px; font-size: 14px; }
+  nav.docs { margin-top: 16px; font-size: 14px; }
+  nav.docs a { margin-right: 20px; }
