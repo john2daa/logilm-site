@@ -47,6 +47,18 @@
   dd { margin: 0; }
   a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
   a:hover { color: var(--muted); }
+  /* 応募への導線。装飾は増やさず、面で押さえるだけにする */
+  .cta {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid var(--accent);
+  }
+  .cta:hover { background: var(--bg); color: var(--accent); }
   footer { padding: 40px 0 72px; color: var(--muted); font-size: 13px; }
   footer p { margin: 0 0 10px; }
   @media (max-width: 520px) {
